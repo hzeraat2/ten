@@ -9,3 +9,14 @@ https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html
 # PostGreSQL
 First of all create a new Postgres database for this project: 
 ` CREATE DATABASE ten_db;`
+
+## Insert data via command line 
+insert inventory:
+```
+python manage.py runscript upload_file --script-args Inventory.csv
+```
+
+insert inventory:
+```
+python manage.py runscriptpython manage.py runscript upload_file --script-args Members.csv
+```
