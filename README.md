@@ -11,6 +11,8 @@ First of all create a new Postgres database for this project:
 ` CREATE DATABASE ten_db;`
 
 ## Insert data via command line 
+
+`Note: duplicate rows from CSVs have been removed`
 insert inventory:
 ```
 python manage.py runscript upload_file --script-args Inventory.csv
@@ -18,5 +20,8 @@ python manage.py runscript upload_file --script-args Inventory.csv
 
 insert inventory:
 ```
-python manage.py runscriptpython manage.py runscript upload_file --script-args Members.csv
+python manage.py runscript upload_file --script-args Members.csv
 ```
+
+## Unit Testing
+Run tests: `pytest`

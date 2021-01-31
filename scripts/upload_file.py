@@ -20,7 +20,9 @@ def run(*args):
 
                     expiration_date_list = expiration_date.split("/")
 
-                    if len(expiration_date_list) == 3:  # only save rows with valid date
+                    if (
+                        len(expiration_date_list) == 3
+                    ):  # only save rows with valid date, not the empty date
                         year = int(expiration_date_list[2])
                         month = int(expiration_date_list[1])
                         day = int(expiration_date_list[0])

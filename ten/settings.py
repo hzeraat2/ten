@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_extensions",
+    "rest_framework",
     "ten",
 ]
 
@@ -53,6 +54,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "ten.urls"
+
+CSRF_COOKIE_SECURE = False
 
 TEMPLATES = [
     {

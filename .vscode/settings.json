@@ -1,0 +1,9 @@
+{
+    "python.testing.pytestArgs": [
+        "ten"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.pythonPath": "/Users/hamed/envs/ten-test/bin/python"
+}

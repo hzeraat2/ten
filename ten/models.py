@@ -7,12 +7,18 @@ class Member(models.Model):
     booking_count = models.PositiveIntegerField()
     date_joined = models.DateTimeField()
 
+    def __str__(self):
+        return self.name
+
 
 class Inventory(models.Model):
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=5000)
     remaining_count = models.PositiveIntegerField()
     expiration_date = models.DateTimeField()
+
+    def __str__(self):
+        return self.title
 
 
 class Booking(models.Model):

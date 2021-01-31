@@ -4,7 +4,7 @@ from scripts import upload_file
 from datetime import datetime
 
 
-class InventoryCase(TestCase):
+class FileProcessorCase(TestCase):
     def setUp(self):
         upload_file.run("Inventory.csv")
         upload_file.run("Members.csv")

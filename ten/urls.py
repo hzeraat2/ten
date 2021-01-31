@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
+from ten.api import api
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    url(r"^api/v1/book", api.book),
+    url(r"^api/v1/cancel", api.cancel),
 ]
