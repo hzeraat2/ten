@@ -26,7 +26,7 @@ insert inventory:
 python manage.py runscript upload_file --script-args Inventory.csv
 ```
 
-insert inventory:
+insert members:
 ```
 python manage.py runscript upload_file --script-args Members.csv
 ```
@@ -35,3 +35,22 @@ python manage.py runscript upload_file --script-args Members.csv
 ```
 Run tests: pytest
 ````
+
+## RESTfulAccess endpoints
+
+```
+Booking:
+POST to
+http://127.0.0.1:8000/api/v1/book 
+
+body payload shape example
+{"name": "Sophie", surname:"Davis", "title": "London"}
+
+Cancellation:
+POST to
+http://127.0.0.1:8000/api/v1/cancel 
+
+body payload shape example
+{"id": 1}
+
+```
